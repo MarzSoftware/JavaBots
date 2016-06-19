@@ -15,6 +15,7 @@ import org.newdawn.slick.geom.Shape;
  * @version 25-NOV-2015
  */
 public abstract class Entity {
+	protected String name;
 	protected float x, y;
 	protected float dirX, dirY;
 	protected float rotz;
@@ -27,10 +28,11 @@ public abstract class Entity {
 	public Entity() {
 		scale = 1.0f;
 		shouldRemove = false;
+		name = "";
 	}
 
 	public abstract void update(GameContainer gc, int delta);
-	public abstract void render(GameContainer gc, Graphics g);
+	public abstract void renderExtra(GameContainer gc, Graphics g);
 
 	public void move(float dx, float dy) {
 		x = x + dx;
@@ -66,6 +68,10 @@ public abstract class Entity {
 		return shouldRemove;
 	}
 
+	public String getName() {
+		return name;
+	}
+	
 	public float getX() {
 		return x;
 	}
@@ -104,6 +110,10 @@ public abstract class Entity {
 
 	public void setShouldRemove(boolean remove) {
 		shouldRemove = remove;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	public void setX(float x) {
