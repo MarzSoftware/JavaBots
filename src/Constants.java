@@ -12,4 +12,6 @@ public class Constants {
 	public static final boolean SHOW_FPS = true;
 	public static final boolean VSYNC_ENABLED = true;
 	public static final boolean SMOOTH_DELTAS = true;
+	
+	public static final int STARTING_ENERGY = 1_000;
 }
