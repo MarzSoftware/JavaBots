@@ -12,14 +12,13 @@ public class GameController extends StateBasedGame {
 	}
 
 	@Override
-	public void initStatesList(GameContainer container) throws SlickException {
+	public void initStatesList(GameContainer gc) throws SlickException {
 		game = new JavaBotGame();
 		addState(game);
 	}
 	
 	@Override
-	public boolean closeRequested()
-	{	
+	public boolean closeRequested() {	
 		return true;
 	}
 }
