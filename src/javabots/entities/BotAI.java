@@ -1,4 +1,4 @@
-package entities;
+package javabots.entities;
 
 public interface BotAI {
 

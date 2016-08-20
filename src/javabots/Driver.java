@@ -1,5 +1,8 @@
+package javabots;
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.SlickException;
+
+import javabots.controller.GameController;
 
 public class Driver {
 	public static void main(String[] args) throws SlickException {

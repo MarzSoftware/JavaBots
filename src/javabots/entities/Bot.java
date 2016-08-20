@@ -1,7 +1,9 @@
-package entities;
+package javabots.entities;
 
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
+
+import javabots.Constants;
 
 public class Bot extends Entity {
 
@@ -10,6 +12,7 @@ public class Bot extends Entity {
 	
 	Bot(String name, BotAI botAI) {
 		super();
+		this.setImage("square");
 		this.name = name;
 		this.botAI = botAI;
 		energy = Constants.STARTING_ENERGY;
@@ -25,8 +28,8 @@ public class Bot extends Entity {
 	}
 
 	@Override
-	public void renderExtra(GameContainer gc, Graphics g) {
-		
+	public void render(GameContainer gc, Graphics g) {
+		g.drawImage(image, x, y, color);
 	}
 
 }

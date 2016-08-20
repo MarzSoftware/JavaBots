@@ -1,4 +1,4 @@
-package entities;
+package javabots.entities;
 
 import org.newdawn.slick.Color;
 import org.newdawn.slick.GameContainer;
@@ -32,7 +32,7 @@ public abstract class Entity {
 	}
 
 	public abstract void update(GameContainer gc, int delta);
-	public abstract void renderExtra(GameContainer gc, Graphics g);
+	public abstract void render(GameContainer gc, Graphics g);
 
 	public void move(float dx, float dy) {
 		x = x + dx;

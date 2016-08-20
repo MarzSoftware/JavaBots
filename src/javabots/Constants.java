@@ -1,3 +1,4 @@
+package javabots;
 
 public class Constants {
 	
